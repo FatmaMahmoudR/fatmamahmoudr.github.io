@@ -341,7 +341,8 @@ justify-content: flex-end;
 
 
 /* skills ****************************************************************************/
-#skills .skills {
+
+ #skills .skills {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
@@ -414,7 +415,7 @@ justify-content: flex-end;
 	font-family: 'Clicker Script',cursive;
   font-size: medium;
 }
-/* 
+
 .bar{
 	background-color: #353b48;
 	display: block;
@@ -607,7 +608,8 @@ justify-content: flex-end;
 	100%{
 		width: 70%;
 	}
-}  */
+} */
+
 
 
 
