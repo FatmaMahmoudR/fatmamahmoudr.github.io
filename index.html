@@ -16,10 +16,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <body>
       <!-- header ---------------------------------------------------------------->
-      
+<!--       
       <div class="header" id="header">
         <div class="container">
-          <!-- <a href="#" class="logo"> <img src="images/logo.png" alt="LOGO"> </a> -->
+          
           
             <p class="logo" style="font-size: 20px; padding-left:50px">Fatma Mahmoud</p>
             
@@ -34,11 +34,40 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-      </div>
+      </div> -->
+
+      <!-- Add this inside <body>, replacing your current .header -->
+<header class="header" id="header">
+  <div class="container navbar">
+    <p class="logo">Fatma Mahmoud</p>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span class="hamburger"></span>
+    </button>
+    <ul class="main-nav" id="navMenu">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#about-id">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navMenu   = document.getElementById('navMenu');
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+    navToggle.classList.toggle('active');
+  });
+</script>
+
 
       <!-- intro ---------------------------------------------------------------->
 
-    <div class="intro main" style= "padding-top: 60px;width: 1170px;">
+    <div class="intro main">
       <div class="text">
         <h1>Hello,I'm <span style="color: #439A97; text-shadow: #FFDC34 1px 0 10px;">Fatma</span><span class="wave">👋</span></h1>
         <p>I'm a passionate .NET developer with a degree in Computer Science from Cairo University's Faculty of Computers and Artificial Intelligence. 
@@ -73,93 +102,74 @@
  
           <div class="skills">  
             <li>
-              <h3>C++</h3><span class="bar"><span class="cpp"></span></span>
+              <h3>C#</h3>
+              <!-- <span class="bar"><span class="csharp"></span></span> -->
+            </li>
+
+            <li>
+              <h3>C++</h3><!-- <span class="bar"><span class="cpp"></span></span> -->
             </li>
             
             <li>
-              <h3>C#</h3><span class="bar"><span class="csharp"></span></span>
+              <h3>Java</h3>
+              <!-- <span class="bar"><span class="java"></span></span> -->
             </li>
 
             <li>
-              <h3>Java</h3><span class="bar"><span class="java"></span></span>
+              <h3>python</h3>
+              <!-- <span class="bar"><span class="py"></span></span> -->
             </li>
 
             <li>
-              <h3>python</h3><span class="bar"><span class="py"></span></span>
-            </li>
-
-            <li>
-              <h3>HTML</h3><span class="bar"><span class="html"></span></span> 
+              <h3>HTML</h3>
+              <!-- <span class="bar"><span class="html"></span></span>  -->
             </li>
           
             <li>
-              <h3>CSS</h3><span class="bar"><span class="css"></span></span>
+              <h3>CSS</h3><!-- <span class="bar"><span class="css"></span></span> -->
             </li>
           
             <li>
-              <h3>JAVASCRIPT</h3><span class="bar"><span class="javascript"></span></span>
+              <h3>JAVASCRIPT</h3><!-- <span class="bar"><span class="javascript"></span></span> -->
             </li>
           
             <li>
-              <h3>My SQL</h3><span class="bar"><span class="sql"></span></span>
+              <h3>SQL Server</h3><!--<span class="bar"><span class="sql"></span></span> -->
             </li>
 
             <li>
-              <h3>MVC</h3><span class="bar"><span class="mvc"></span></span>
+              <h3>MVC</h3><!-- <span class="bar"><span class="mvc"></span></span> -->
             </li>
 
             <li>
-              <h3>Entity Framework</h3><span class="bar"><span class="ef"></span></span>
+              <h3>Entity Framework Core</h3><!-- <span class="bar"><span class="ef"></span></span> -->
             </li>
 
             <li>
-              <h3>ASP.NET</h3><span class="bar"><span class="net"></span></span>
+              <h3>ASP.NET Core</h3><!-- <span class="bar"><span class="net"></span></span> -->
             </li>
-
             <li>
-              <h3>Design Pattern</h3><span class="bar"><span class="de-pa"></span></span>
+              <h3>REST</h3>
+            </li>
+            <li>
+              <h3>Design Pattern</h3><!-- <span class="bar"><span class="de-pa"></span></span> -->
             </li>
             
+            <li>
+              <h3>clean architecture</h3>
+            </li>
+            
+            
+            <li>
+              <h3>Git Version Control</h3>
+            </li>
           </div>
                
-  
+
      </div>
 
      <hr>
-    <!-- About ------------------------------------------------------------>
-
- 
-  
-      <div class="main about" id="about-id">
-        <div class="section-title">
-            <h1>About</h1>
-        </div>
-              <div class="about-content">
-                <div class="image">
-                  <img src="images/aa.jpg" alt="">
-                </div>
-                <div class="text">
-                  
-                  <p>
-                    As a web developer, I am enthusiastic about making an impact in the digital landscape.
-                     My journey in this field has been fueled by a passion for turning innovative 
-                     ideas into reality and exploring the endless possibilities of the web. 
-                     I continuously refine my skills and stay ahead of industry trends, 
-                     always on the lookout for new challenges to broaden my expertise.
-                      Collaborating with talented teams and pushing the boundaries of creativity
-                       drives me to develop solutions that are both cutting-edge and efficient. 
-                       With a solid foundation in computer science and a deep love for data-driven and user-centric design,
-                        I am dedicated to crafting web experiences that blend functionality with stunning aesthetics.
-                     Let’s connect and embark on an exciting journey in the dynamic world of web development!
-                  </p>
-                  
-                  
-                </div>
-              </div>
-            </div>
-        </div>
-
-<hr>
+    
         <!-- Projects -------------------------------------------------------------->
 
         <div class="main" id="projects">
@@ -167,15 +177,31 @@
             <h1>Projects</h1>
         </div>
           <ul class="allcards">
-     <!-- 1 -->
+     <!-- 1  -->
             <li class="cards_item">
+              <div class="card">
+                <div class="card-img"><img src="images/Projects/elearn.jpeg" alt="ecommerce">
+                </div>
+                <div class="card-content">
+                  <h2 class="card-title">Online Learning Platform using asp.net</h2>
+                  <div class="card-text">
+                  <p> SQL - C# - LINQ - EF - ASP.NET MVC - Identity - Repository Pattern </p>
+                  </div>
+                  <div class="card-button">
+                    <a class="btn" href="https://github.com/FatmaMahmoudR/OnlineLearningPlatform">Source Code</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+     <!-- 2 -->
+      <li class="cards_item">
               <div class="card">
                 <div class="card-img"><img src="images/Projects/ecommerce.jpeg" alt="ecommerce">
                 </div>
                 <div class="card-content">
                   <h2 class="card-title">Ecommerce Website using asp.net</h2>
                   <div class="card-text">
-                  <p> Bootstrap SQL - C# - LINQ - EF - ASP.NET MVC </p>
+                  <p> SQL - C# - LINQ - EF - ASP.NET MVC </p>
                   </div>
                   <div class="card-button">
                     <a class="btn" href="https://github.com/FatmaMahmoudR/ecommerce-aspnet-mvc.git">Source Code</a>
@@ -183,31 +209,16 @@
                 </div>
               </div>
             </li>
-     <!-- 2 -->
-     <li class="cards_item">
-      <div class="card">
-        <div class="card-img"><img src="images/Projects/bank.jpeg" alt="bank"></div>
-        <div class="card-content">
-          <h2 class="card-title"> Bank System</h2>
-          <div class="card-text">
-            
-             <p> C# - SQL - WindowsForms </p>
-          </div><br>
-          <div class="card-button">
-          <a class="btn" href="https://github.com/FatmaMahmoudR/Bank-System-Database.git">Source Code</a>
-          </div>
-        </div>
-      </div>
-    </li>
-      <!-- 3    -->
-      
+
+     
+      <!-- 3    -->    
       <li class="cards_item">
         <div class="card">
-          <div class="card-img"><img src="images/Projects/elearn.jpeg" alt="learnning system"></div>
+          <div class="card-img"><img src="images/Projects/learn.PNG" alt="learnning system"></div>
           <div class="card-content">
             <h2 class="card-title">Learning Management System</h2>
             <div class="card-text">
-              <p> Bootstrap My SQL - C# - LINQ - EF - ASP.NET MVC </p>
+              <p> SQL - C# - LINQ - EF - ASP.NET MVC </p>
              </div>
              <div class="card-button">
              <a class="btn" href="https://github.com/FatmaMahmoudR/Learning_Management_System-aspnet-MVC.git">Source Code</a>
@@ -217,38 +228,43 @@
             
 
         <!-- 4 -->
+
         <li class="cards_item">
           <div class="card">
-            <div class="card-img"><img src="images/Projects/stud.jpeg" alt="student affairs"></div>
+            <div class="card-img"><img src="images/Projects/deepfake.PNG" alt="Memory Allocator"></div>
             <div class="card-content">
-              <h2 class="card-title">Student-Affairs</h2>
+              <h2 class="card-title">VERIVEDIO Deepfake Detection</h2>
               <div class="card-text">
-                <p>HTML - CSS - JAVASCRIPT - Django - Python </p>
-              </div><br>
+                
+                <p> Computer vision - Pytorch - Flask - CNN - LSTM - OpenCV </p>
+              </div>
+              <br>
               <div class="card-button">
-              <a class="btn" href="https://github.com/FatmaMahmoudR/Student-Affairs-FrontEnd.git">Source Code</a>
+              <a class="btn" href="https://github.com/FatmaMahmoudR/VERIVIDEO-DEEPFAKE-DETECTION">Source Code</a>
             </div>
             </div>
           </div>
         </li>
 
+
+      
         <!-- 5 -->
-        <li class="cards_item">
-          <div class="card">
-            <div class="card-img"><img src="images/Projects/0101.jpg" alt="Memory Allocator"></div>
-            <div class="card-content">
-              <h2 class="card-title">Memory Allocator</h2>
-              <div class="card-text">
-                
-                <p>Java - memory allocation techniques</p>
-              </div>
-              <br>
-              <div class="card-button">
-              <a class="btn" href="https://github.com/FatmaMahmoudR/Memory-Allocator.git">Source Code</a>
-            </div>
-            </div>
+          <li class="cards_item">
+      <div class="card">
+        <div class="card-img"><img src="images/Projects/bank.jpeg" alt="bank"></div>
+        <div class="card-content">
+          <h2 class="card-title"> Bank System</h2>
+          <div class="card-text">
+            
+             <p> C# - SQL - ADO.net - WindowsForms </p>
+          </div><br>
+          <div class="card-button">
+          <a class="btn" href="https://github.com/FatmaMahmoudR/Bank-System-Database.git">Source Code</a>
           </div>
-        </li>
+        </div>
+      </div>
+    </li>
+
 
         <!-- 6  -->
         <li class="cards_item">
@@ -270,15 +286,47 @@
         </div>
 
         <hr>
+        <!-- About ------------------------------------------------------------>
+  
+      <div class="main about" id="about-id">
+        <div class="section-title">
+            <h1>About</h1>
+        </div>
+              <div class="about-content">
+                <div class="image">
+                  <img src="images/aa.jpg" alt="">
+                </div>
+                <div class="text">
+                  
+                  <p>
+                    As a .Net backend developer, I am enthusiastic about making an impact in the digital landscape.
+                     My journey in this field has been fueled by a passion for turning innovative 
+                     ideas into reality and exploring the endless possibilities of the web. 
+                     I continuously refine my skills and stay ahead of industry trends, 
+                     always on the lookout for new challenges to broaden my expertise.
+                      Collaborating with talented teams and pushing the boundaries of creativity
+                       drives me to develop solutions that are both cutting-edge and efficient. 
+                       With a solid foundation in computer science and a deep love for data-driven and user-centric design,
+                        I am dedicated to crafting web experiences that blend functionality with stunning aesthetics.
+                     Let’s connect and embark on an exciting journey in the dynamic world of web development!
+                  </p>
+                  
+                  
+                </div>
+              </div>
+            </div>
+        </div>
+
+<hr>
         <!-- resume--------------------------------------------------------------- -->
 
-        <div class="main" id="resume">
+        <!-- <div class="main" id="resume">
           <div class="section-title">
             <h1>Resume</h1>
           </div>
           <iframe src="docx/resume.pdf" title="resume" width="100%" height="800px" style="border:1px solid black;"></iframe>
         </div>
-        <hr>
+        <hr> -->
         <!-- contact us ----------------------------------------------------------->
   
   <div class="main" id="contact" style="margin-bottom: 200px;">
